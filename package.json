@@ -1,18 +1,28 @@
 {
   "name": "phase-0-js-css-fundamentals-lab",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learn-co-curriculum/phase-0-js-css-fundamentals-lab.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "jest": "^29.7.0"
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/learn-co-curriculum/phase-0-js-css-fundamentals-lab/issues"
   },
-  "dependencies": {
-    "jsdom": "^24.1.1"
+  "homepage": "https://github.com/learn-co-curriculum/phase-0-js-css-fundamentals-lab#readme",
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "jsdom": "^26.1.0"
   }
 }
