@@ -1,120 +1,100 @@
-/* =========================
-   Navigation Bar
-   ========================= */
-
+/* Navigation Bar */
 .navbar {
   background-color: #333;
-  font-size: 18px;
-  padding: 15px;
+  font-size: 1.2em;
+  padding: 1em;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar li {
-  display: inline-block;
-  margin: 0 10px;
+.navbar ul li {
+  display: inline;
+  margin: 0 1em;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
+.navbar ul li a {
+  color: #fff;
 }
 
 
-/* =========================
-   Main Content
-   ========================= */
-
-main {
-  padding: 30px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: #333;
+/* Main Content */
+.main-content {
+  padding-top: 5em;
 }
 
-#home {
-  padding: 30px;
-  margin: 20px;
+section {
+  padding: 2em 1em;
   text-align: center;
 }
 
 #home h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 #home p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 10px 0;
+  font-size: 1.2em;
+  color: #666;
 }
 
 
-/* =========================
-   Portfolio Section
-   ========================= */
-
+/* Portfolio Section */
 .portfolio-container {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 30px;
+  justify-content: space-around;
+  padding: 1em;
 }
 
 .portfolio-item {
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
+  background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 250px;
-  transition: transform 0.3s ease;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  box-sizing: border-box;
+  transition: transform 0.3s;
 }
 
-.portfolio-item h2,
 .portfolio-item h3 {
-  margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
 .portfolio-item p {
-  font-size: 16px;
-  line-height: 1.5;
+  margin-bottom: 0.5em;
+  color: #666;
 }
 
 .portfolio-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 15px;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
-/* =========================
-   Portfolio Hover Effect
-   ========================= */
-
+/* Hover Effect */
 .portfolio-item:hover {
   transform: scale(1.05);
 }
 
 
-/* =========================
-   Footer
-   ========================= */
-
+/* Footer */
 #footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 2em;
   text-align: center;
   position: relative;
-  margin-top: 30px;
+  bottom: 0;
+  width: 100%;
 }
